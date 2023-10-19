@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- HTML -->
+    <p id="paragraph">Hôm nay là một ngày đẹp trời!</p>
     
-</body>
+    <!-- CSS -->
+    <style>
+      #paragraph {
+        font-size: 18px;
+        color: red;
+      }
+    </style>
+
+    <!-- JavaScript  -->
+    <script>
+      const p = document.getElementById("paragraph");
+      p.onclick = function () {
+        this.innerText = "Bạn đã CLICK vào đoạn văn bản!";
+      };
+    </script>
+  </body>
 </html>
